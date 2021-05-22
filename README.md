@@ -141,4 +141,4 @@ The preprint can be found [here](https://arxiv.org/abs/1910.01122).
 ## My Work
 Integrating Intel Realsense T265 to openvslam (without ROS). Intel librealsense has to be installed. 
 - `cd openvslam/build`
-- `./run_t265_slam -v ../Vocabulary/orb_vocab.fbow -n 2 -c ../example/realsense_t265/stereo_t265.yaml `
+- `./run_t265_slam -v orb_vocab.fbow -n 2 -c ../example/realsense_t265/stereo_t265.yaml `

@@ -35,6 +35,11 @@ endif()
 
 set(EXECUTABLE_TARGETS "")
 
+set(SOURCES run_t265_slam.cc realstereo.cpp)
+set(HEADERS realstereo.h)
+add_executable(run_t265_slam ${SOURCES} ${HEADERS})
+list(APPEND EXECUTABLE_TARGETS run_t265_slam)
+
 add_executable(run_camera_slam run_camera_slam.cc)
 list(APPEND EXECUTABLE_TARGETS run_camera_slam)
 

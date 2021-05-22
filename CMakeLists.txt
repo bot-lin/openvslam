@@ -83,6 +83,19 @@ if(NOT TARGET OpenMP::OpenMP_CXX)
                  PROPERTY INTERFACE_LINK_LIBRARIES ${OpenMP_CXX_FLAGS} Threads::Threads)
 endif()
 
+# realsense2
+if(WITH_REALSENSE2)
+    if(WIN32)
+        find_package(RealSense2 QUIET)
+    ELSE()
+        find_package(realsense2 QUIET)
+    ENDIF()
+    IF(realsense2_FOUND)
+       message(STATUS "Found RealSense2: ${realsense2_INCLUDE_DIRS}")
+       set(CONF_DEPENDENCIES ${realsense2_LIBRARIES}) 
+    ENDIF(realsense2_FOUND)
+ENDIF(WITH_REALSENSE2)
+
 # Eigen
 find_package(Eigen3 3.3 REQUIRED)
 

@@ -136,3 +136,9 @@ The preprint can be found [here](https://arxiv.org/abs/1910.01122).
 - Mapillary AB. 2019. OpenSfM. https://github.com/mapillary/OpenSfM.
 - Giorgio Grisetti, Rainer Kümmerle, Cyrill Stachniss, and Wolfram Burgard. 2010. A Tutorial on Graph-Based SLAM. IEEE Transactions on Intelligent Transportation SystemsMagazine 2, 4 (2010), 31–43.
 - Rainer Kümmerle, Giorgio Grisetti, Hauke Strasdat, Kurt Konolige, and Wolfram Burgard. 2011. g2o: A general framework for graph optimization. In Proceedings of IEEE International Conference on Robotics and Automation (ICRA). 3607–3613.
+
+
+## My Work
+Integrating Intel Realsense T265 to openvslam (without ROS). Intel librealsense has to be installed. 
+- `cd openvslam/build`
+- `./run_t265_slam -v ../Vocabulary/orb_vocab.fbow -n 2 -c ../example/realsense_t265/stereo_t265.yaml `

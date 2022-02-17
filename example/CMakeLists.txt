@@ -109,7 +109,8 @@ foreach(EXECUTABLE_TARGET IN LISTS EXECUTABLE_TARGETS)
                           PRIVATE
                           ${PROJECT_NAME}
                           opencv_imgcodecs
-                          opencv_videoio)
+                          opencv_videoio
+                          ${RealSense2_LIBRARIES})
 
     # include popl and spdlog headers
     target_include_directories(${EXECUTABLE_TARGET}
